@@ -2,14 +2,14 @@ import json
 
 
 def read_file():
-    with open('input.json','r') as f:
+    with open('input.json', 'r') as f:
         return json.loads(f.read())
 
 
-def get_adjacency_matrix(works, edjes, count):
-    arr = [[0 for i in range(count)] for j in range(count)]
+def get_adjacency_matrix(works, edjes):
+    arr = list()
     for i in edjes:
-        arr[i['start']-1][i['finish']-1] = works[i['start']-1]['normal_len']
+        arr.append(tuple((i['start']-1, i['finish']-1, works[i['start']-1]['normal_len'])))
     return arr
 
 
@@ -18,7 +18,7 @@ def get_input_data():
     works = all_file['works']
     milestones = all_file['milestones']
     edjes = all_file['edjes']
-    adj_matrix = get_adjacency_matrix(works, edjes, len(works) + len(edjes))
+    adj_matrix = get_adjacency_matrix(works, edjes)
     return works, milestones, adj_matrix
 
 
