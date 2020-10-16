@@ -2,7 +2,7 @@ import json
 
 
 def read_file():
-    with open('input.json', 'r') as f:
+    with open('input.json','r') as f:
         return json.loads(f.read())
 
 
