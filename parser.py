@@ -20,7 +20,3 @@ def get_input_data():
     edjes = all_file['edjes']
     adj_matrix = get_adjacency_matrix(works, edjes)
     return works, milestones, adj_matrix
-
-
-if __name__ == '__main__':
-    get_input_data()
