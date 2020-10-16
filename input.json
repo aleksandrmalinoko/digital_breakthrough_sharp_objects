@@ -1,0 +1,56 @@
+{"works":
+	[{
+		"uid":1,
+		"name":"hello",
+		"start":10,
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":1,
+		"min_len":1,
+		"time_cost":1
+		},
+	 {
+		"uid":2,
+		"name":"hello",
+		"start":10,
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":1,
+		"min_len":1,
+		"time_cost":1
+		}
+	],
+"milestones":
+	[{
+		"uid":3,
+		"name":"hello",
+		"start":10,
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":0,
+		"min_len":0,
+		"time_cost":-1
+		},
+	 {
+		"uid":4,
+		"name":"hello",
+		"start":10,
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":0,
+		"min_len":0,
+		"time_cost":-1
+		}
+	],
+
+"edjes":
+	[{
+		"start":1,
+		"finish":2
+	},
+	{
+		"start":1,
+		"finish":3
+	}
+	]
+}
