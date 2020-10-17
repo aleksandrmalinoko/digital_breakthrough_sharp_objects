@@ -1,0 +1,25 @@
+{"works":
+	[{
+		"uid":1,
+		"start":0,
+		"normal_len":1
+		},
+	 {
+		"uid":2,
+		"start":10,
+		"normal_len":10
+		}
+	],
+"milestones":
+	[{
+		"uid":3,
+		"start":10,
+		"normal_len":0
+		},
+	 {
+		"uid":4,
+		"start":10,
+		"normal_len":0
+		}
+	]
+}
