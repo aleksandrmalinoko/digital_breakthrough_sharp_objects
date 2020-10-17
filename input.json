@@ -1,6 +1,6 @@
 {"works":
 	[{
-		"uid":1,
+		"uid":0,
 		"name":"hello",
 		"start":0,
 		"shift_before":1,
@@ -10,19 +10,19 @@
 		"time_cost":1
 		},
 	 {
-		"uid":2,
+		"uid":1,
 		"name":"hello",
 		"start":10,
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":10,
-		"min_len":1,
+		"min_len":2,
 		"time_cost":1
 		}
 	],
 "milestones":
 	[{
-		"uid":3,
+		"uid":2,
 		"name":"hello",
 		"start":10,
 		"shift_before":1,
@@ -32,7 +32,7 @@
 		"time_cost":-1
 		},
 	 {
-		"uid":4,
+		"uid":3,
 		"name":"hello",
 		"start":10,
 		"shift_before":1,
@@ -44,24 +44,20 @@
 	],
 "edges":
 	[{
-		"start":1,
-		"finish":2
-	},
-	{
-		"start":1,
-		"finish":4
-	},
-	{
-		"start":1,
-		"finish":3
-	},
-	{
 		"start":2,
 		"finish":3
 	},
 	{
-		"start":3,
-		"finish":4
+		"start":1,
+		"finish":2
+	},
+	{
+		"start":0,
+		"finish":1
+	},
+	{
+		"start":0,
+		"finish":3
 	}
 	]
 }
