@@ -16,8 +16,8 @@ def get_adjacency_matrix(works, edges):
     return arr
 
 
-def get_input_data():
-    all_file = read_file('input.json')
+def get_input_data(fileName):
+    all_file = read_file(fileName)
     works = all_file['works']
     milestones = all_file['milestones']
     edges = all_file['edges']
@@ -25,8 +25,8 @@ def get_input_data():
     return works, milestones, adj_matrix
 
 
-def get_edit_data():
-    all_file = read_file('edit.json')
+def get_edit_data(fileName):
+    all_file = read_file(fileName)
     works = all_file['works']
     milestones = all_file['milestones']
     return works, milestones
