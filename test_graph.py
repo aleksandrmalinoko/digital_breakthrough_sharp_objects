@@ -1,9 +1,10 @@
-import matplotlib.pyplot as plt
-
 import networkx as nx
 import json
 
+from parsing.parser import get_input_data
 
+
+'''
 def read_file():
     with open('input.json', 'r') as f:
         return json.loads(f.read())
@@ -19,7 +20,7 @@ def get_adjacency_matrix(works, edjes):
 def get_input_data():
     all_file = read_file()
     return all_file['works'], all_file['milestones'], get_adjacency_matrix(all_file['works'], all_file['edjes'])
-
+'''
 
 DG = nx.DiGraph()
 works, milestones, adj_matrix = get_input_data()
