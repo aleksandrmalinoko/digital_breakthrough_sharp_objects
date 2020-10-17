@@ -32,7 +32,7 @@
 		"time_cost":-1
 		},
 	 {
-		"uid":3,
+		"uid":4,
 		"name":"hello",
 		"start":10,
 		"shift_before":1,
@@ -45,7 +45,7 @@
 "edges":
 	[{
 		"start":2,
-		"finish":3
+		"finish":4
 	},
 	{
 		"start":1,
@@ -57,7 +57,7 @@
 	},
 	{
 		"start":0,
-		"finish":3
+		"finish":4
 	}
 	]
 }
