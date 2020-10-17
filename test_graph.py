@@ -1,7 +1,7 @@
 import networkx as nx
 from parsing.parser import get_input_data, get_edit_data
 from graph.traversal import find_source_vertex, find_stock_vertex, remove_input_edges, partitioning_graph
-# from draw.drawgraph import draw_graph
+from draw.drawgraph import draw_graph
 from view.window import Window
 from tkinter import Tk
 
