@@ -2,7 +2,7 @@
 	[{
 		"uid":0,
 		"name":"hello",
-		"start":0,
+		"start":"2009-01-01",
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":1,
@@ -12,7 +12,7 @@
 	 {
 		"uid":1,
 		"name":"hello",
-		"start":10,
+		"start":"2009-01-01",
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":10,
@@ -24,7 +24,7 @@
 	[{
 		"uid":2,
 		"name":"hello",
-		"start":10,
+		"start":"2009-01-01",
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":0,
@@ -34,7 +34,7 @@
 	 {
 		"uid":4,
 		"name":"hello",
-		"start":10,
+		"start":"2009-01-01",
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":0,

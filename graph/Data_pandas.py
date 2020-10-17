@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def build_frame(data_list):
     ls = list()
     for i in range(len(data_list)):
