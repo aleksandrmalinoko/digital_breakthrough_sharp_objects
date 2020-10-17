@@ -6,16 +6,7 @@ from draw.drawgraph import draw_graph
 DG = nx.DiGraph()
 works, milestones, adj_matrix = get_input_data()
 DG.add_weighted_edges_from(adj_matrix)
-print(DG.nodes)
-print(DG.adjacency())
-
-for n, nbrsdict in DG.adjacency():
-    for nbr, eattr in nbrsdict.items():
-        # print(nbr)
-        # print(eattr)
-        pass
-
-# print(list(DG.neighbors(0)))
+print(list(DG.neighbors(0)))
 draw_graph(DG)
 
 '''
