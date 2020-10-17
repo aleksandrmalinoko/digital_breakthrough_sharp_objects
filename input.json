@@ -2,7 +2,7 @@
 	[{
 		"uid":1,
 		"name":"hello",
-		"start":10,
+		"start":0,
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":1,
@@ -42,7 +42,7 @@
 		"time_cost":-1
 		}
 	],
-"edjes":
+"edges":
 	[{
 		"start":1,
 		"finish":2
@@ -54,6 +54,14 @@
 	{
 		"start":1,
 		"finish":3
+	},
+	{
+		"start":2,
+		"finish":3
+	},
+	{
+		"start":3,
+		"finish":4
 	}
 	]
 }
