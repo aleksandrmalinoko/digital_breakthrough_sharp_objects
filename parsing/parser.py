@@ -9,10 +9,10 @@ def read_file(path_file):
 def get_adjacency_matrix(works, edges):
     arr = list()
     for i in edges:
-        if i['start']-1 >= len(works):
-            arr.append(tuple((i['start'] - 1, i['finish'] - 1, 0)))
+        if i['start'] >= len(works):
+            arr.append(tuple((i['start'], i['finish'], 0)))
         else:
-            arr.append(tuple((i['start']-1, i['finish']-1, works[i['start']-1]['normal_len'])))
+            arr.append(tuple((i['start'], i['finish'], works[i['start']]['normal_len'])))
     return arr
 
 
