@@ -32,4 +32,4 @@ def main(inputFile, editFile, date, maxPrice):
         DG_frame_input["start"][i["uid"]] = DG_frame_input["start"][i["uid"]] + " 00:00:01"
         DG_frame_input["end"][i["uid"]] = DG_frame_input["end"][i["uid"]] + " 23:59:59"
 
-    drawgraph.test(DG_frame_input, sum)
+    drawgraph.test(DG_frame_input, sum, maxPrice, date)
