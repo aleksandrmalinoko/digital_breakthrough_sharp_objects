@@ -6,8 +6,6 @@ import networkx as nx
 
 
 def test(temp):
-
-
     df = pd.DataFrame([
         dict(Task="Job A", Start='2009-01-01', Finish='2009-02-28', Resource="Old", Text="Length: 20 days <br> Cost: 50.000"),
         dict(Task="Job B", Start='2009-03-05', Finish='2009-04-15', Resource="Old", Text="Length: 10 days <br> Cost: 50.000"),
