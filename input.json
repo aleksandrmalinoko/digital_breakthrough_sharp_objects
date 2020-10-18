@@ -1,7 +1,7 @@
 {"works":
 	[{
 		"uid":0,
-		"name":"hello",
+		"name":"0",
 		"start":"2017-07-08",
 		"shift_before":1,
 		"shift_later":1,
@@ -11,8 +11,58 @@
 		},
 	 {
 		"uid":1,
-		"name":"hello",
-		"start":"2017-07-14",
+		"name":"1",
+		"start":"2017-07-12",
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":5,
+		"min_len":3,
+		"time_cost":1
+		},
+	 {
+		"uid":2,
+		"name":"2",
+		"start":"2017-07-12",
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":5,
+		"min_len":3,
+		"time_cost":1
+		},
+	 {
+		"uid":3,
+		"name":"3",
+		"start":"2017-07-17",
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":5,
+		"min_len":3,
+		"time_cost":1
+		},
+	 {
+		"uid":5,
+		"name":"5",
+		"start":"2017-07-22",
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":5,
+		"min_len":3,
+		"time_cost":1
+		},
+	 {
+		"uid":6,
+		"name":"6",
+		"start":"2017-07-27",
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":5,
+		"min_len":3,
+		"time_cost":1
+		},
+	 {
+		"uid":7,
+		"name":"7",
+		"start":"2017-07-27",
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":5,
@@ -22,9 +72,9 @@
 	],
 "milestones":
 	[{
-		"uid":2,
-		"name":"hello",
-		"start":"2016-07-06",
+		"uid":4,
+		"name":"4",
+		"start":"2017-07-22",
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":0,
@@ -32,9 +82,9 @@
 		"time_cost":-1
 		},
 	 {
-		"uid":4,
-		"name":"hello",
-		"start":"2017-08-06",
+		"uid":8,
+		"name":"8",
+		"start":"2017-08-01",
 		"shift_before":1,
 		"shift_later":1,
 		"normal_len":0,
@@ -44,20 +94,44 @@
 	],
 "edges":
 	[{
-		"start":2,
-		"finish":4
-	},
-	{
-		"start":1,
-		"finish":2
-	},
-	{
 		"start":0,
 		"finish":1
 	},
 	{
 		"start":0,
+		"finish":2
+	},
+	{
+		"start":1,
+		"finish":3
+	},
+	{
+		"start":2,
+		"finish":3
+	},
+	{
+		"start":3,
 		"finish":4
+	},
+	{
+		"start":4,
+		"finish":5
+	},
+	{
+		"start":5,
+		"finish":6
+	},
+	{
+		"start":5,
+		"finish":7
+	},
+	{
+		"start":6,
+		"finish":8
+	},
+	{
+		"start":7,
+		"finish":8
 	}
 	]
 }
