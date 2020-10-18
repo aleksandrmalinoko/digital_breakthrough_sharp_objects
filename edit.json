@@ -1,25 +1,25 @@
 {"works":
 	[{
-		"uid":1,
-		"start":0,
-		"normal_len":1
-		},
-	 {
-		"uid":2,
-		"start":10,
-		"normal_len":10
+		"uid":0,
+		"name":"hello",
+		"start":"2017-07-10",
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":7,
+		"min_len":3,
+		"time_cost":1
 		}
 	],
 "milestones":
 	[{
-		"uid":3,
-		"start":10,
-		"normal_len":0
-		},
-	 {
 		"uid":4,
-		"start":10,
-		"normal_len":0
+		"name":"hello",
+		"start":"2017-08-05",
+		"shift_before":1,
+		"shift_later":1,
+		"normal_len":0,
+		"min_len":0,
+		"time_cost":-1
 		}
 	]
 }
