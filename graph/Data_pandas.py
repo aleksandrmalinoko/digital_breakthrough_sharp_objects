@@ -39,7 +39,7 @@ def calculate_shift(planned, fact, data, graph:nx.DiGraph):
         if datetime.strptime(planned['start'][i], '%Y-%m-%d') < datetime.strptime(data, '%Y-%m-%d'):
             planned['end'][i] = date_calculate(planned['start'][i], planned['normal_len'][i])
         else:
-            neighbors_list = graph.neighbors(i)
+            neighbors_list = list(graph.neighbors(i))
             flag = True
 
             for j in neighbors_list:
