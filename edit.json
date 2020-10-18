@@ -2,10 +2,10 @@
 	[{
 		"uid":0,
 		"name":"hello",
-		"start":"2017-07-17",
+		"start":"2017-07-10",
 		"shift_before":1,
 		"shift_later":1,
-		"normal_len":5,
+		"normal_len":7,
 		"min_len":3,
 		"time_cost":1
 		}
