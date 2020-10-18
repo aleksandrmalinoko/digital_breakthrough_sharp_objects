@@ -1,7 +1,6 @@
 import os.path
 from parsing import parser
 from draw import drawgraph
-import networkx as nx
 from graph.Data_pandas import *
 
 
@@ -16,37 +15,20 @@ def main(inputFile, editFile, date, maxPrice):
     DG_frame_input = build_frame(works + milestones_input)
     milestones_frame_input = build_frame(milestones_input)
 
-    # print(DG_frame_input)
     works, milestones = parser.get_edit_data(editFile)
 
     DG_frame_edit = build_frame(works + milestones)
     milestones_frame_edit = build_frame(milestones)
 
-    DG_frame_input, DG_frame_edit = was_edited(DG_frame_input, DG_frame_edit)
-
-    sum, DG_frame_input = calculate_shift(DG_frame_input, DG_frame_edit, '2017-07-08', DG)
-
-    #print(sum)
-    print(DG_frame_input)
-
-
-    '''print(parser.get_input_data(inputFile))
-    print("-----------------")
-    print(parser.get_edit_data(editFile))'''
-
-    drawgraph.test()
+    DG_frame_input = was_edited(DG_frame_input, DG_frame_edit)
 
     DG = nx.DiGraph()
-    # works, milestones, adj_matrix = get_input_data()
     DG.add_weighted_edges_from(adj_matrix)
 
-    # y = find_stock_vertex(DG)
-    # x = find_source_vertex(DG)
-    drawgraph.draw_graph(DG)
-    # DG.nodes()
+    sum, DG_frame_input = calculate_shift(DG_frame_input, DG_frame_edit, date, DG)
 
-    # test = partitioning_graph(DG, milestones)
+    for i in milestones_input:
+        DG_frame_input["start"][i["uid"]] = DG_frame_input["start"][i["uid"]] + " 00:00:01"
+        DG_frame_input["end"][i["uid"]] = DG_frame_input["end"][i["uid"]] + " 23:59:59"
 
-
-    '''works, milestones, adj_matrix = parser.get_input_data(inputFile)
-    worksEdit, milestonesEdit = parser.get_edit_data(editFile)'''
+    drawgraph.test(DG_frame_input, sum)

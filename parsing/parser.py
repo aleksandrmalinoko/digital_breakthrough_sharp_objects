@@ -28,5 +28,9 @@ def get_input_data(fileName):
 def get_edit_data(fileName):
     all_file = read_file(fileName)
     works = all_file['works']
-    milestones = all_file['milestones']
+    milestones = list()
+    try:
+        milestones = all_file['milestones']
+    except KeyError:
+        pass
     return works, milestones
