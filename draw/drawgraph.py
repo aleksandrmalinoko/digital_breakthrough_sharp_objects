@@ -9,12 +9,12 @@ def test(temp, sum):
 
     '''
     df = pd.DataFrame([
-        dict(Task="Job A", Start='2009-01-01', Finish='2009-02-28', Resource="Alex"),
-        dict(Task="Job B", Start='2009-03-05', Finish='2009-04-15', Resource="Alex"),
-        dict(Task="Job C", Start='2009-02-20', Finish='2009-05-30', Resource="Max"),
-        dict(Task="Job D", Start='2009-02-20', Finish='2009-05-30', Resource="Max"),
-        dict(Task="Job E", Start='2009-02-20', Finish='2009-05-30', Resource="Max"),
-        dict(Task="Job F", Start='2009-02-20', Finish='2009-05-30', Resource="Max")
+        dict(Task="Job A", Start='2009-01-01', Finish='2009-02-28', Resource="Old", Text="Length: 20 days <br> Cost: 50.000"),
+        dict(Task="Job B", Start='2009-03-05', Finish='2009-04-15', Resource="Old", Text="Length: 10 days <br> Cost: 50.000"),
+        dict(Task="Job C", Start='2019-02-20', Finish='2019-05-30', Resource="New", Text="Length: 25 days <br> Cost: 50.000"),
+        dict(Task="Job D", Start='2009-02-20', Finish='2009-05-30', Resource="New", Text="Length: 30 days <br> Cost: 50.000"),
+        dict(Task="Job E", Start='2010-02-20 00:00:01', Finish='2010-02-20 23:59:59', Resource="New", Text="Length: 5 days <br> Cost: 50.000"),
+        dict(Task="Job F", Start='2014-02-20', Finish='2014-05-30', Resource="New", Text="Length: 2 day <br> Cost: 60.000")
     ])
     '''
 

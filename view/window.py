@@ -22,7 +22,7 @@ class Window(Frame):
         main.main(self.inputFile, self.editFile, self.dateChange.get(), self.maxPriceEntry.get())
 
     def initUI(self):
-        self.master.title("Острые козырьки")
+        self.master.title("Острые предметы")
         self.pack(fill=BOTH, expand=True)
 
         source_text = Label(self, text="Исходный план")

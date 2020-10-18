@@ -27,6 +27,7 @@ def main(inputFile, editFile, date, maxPrice):
 
     sum, DG_frame_input = calculate_shift(DG_frame_input, DG_frame_edit, date, DG)
 
+
     for i in milestones_input:
         DG_frame_input["start"][i["uid"]] = DG_frame_input["start"][i["uid"]] + " 00:00:01"
         DG_frame_input["end"][i["uid"]] = DG_frame_input["end"][i["uid"]] + " 23:59:59"

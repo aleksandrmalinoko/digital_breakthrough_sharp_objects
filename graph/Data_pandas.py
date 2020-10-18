@@ -11,6 +11,7 @@ def date_minus(start, end):
     return (datetime.strptime(end, '%Y-%m-%d') - datetime.strptime(start, '%Y-%m-%d')).days
 
 
+
 def build_frame(data_list):
     ls = list()
     for i in range(len(data_list)):
