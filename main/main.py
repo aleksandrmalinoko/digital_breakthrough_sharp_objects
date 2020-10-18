@@ -2,6 +2,7 @@ import os.path
 from parsing import parser
 from draw import drawgraph
 import networkx as nx
+from graph.Data_pandas import *
 
 
 def main(inputFile, editFile, date, maxPrice):
@@ -10,7 +11,18 @@ def main(inputFile, editFile, date, maxPrice):
     if os.path.isfile(editFile) is False:
         return
 
-    works, milestones, adj_matrix = parser.get_input_data(inputFile)
+    works, milestones_input, adj_matrix = parser.get_input_data(inputFile)
+
+    DG_frame_input = build_frame(works + milestones_input)
+    milestones_frame_input = build_frame(milestones_input)
+
+    # print(DG_frame_input)
+    works, milestones = parser.get_edit_data(editFile)
+
+    DG_frame_edit = build_frame(works + milestones)
+    milestones_frame_edit = build_frame(milestones)
+
+    DG_frame_input, DG_frame_edit = was_edited(DG_frame_input, DG_frame_edit)
 
     '''print(parser.get_input_data(inputFile))
     print("-----------------")
