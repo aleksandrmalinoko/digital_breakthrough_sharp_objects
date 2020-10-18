@@ -24,6 +24,12 @@ def main(inputFile, editFile, date, maxPrice):
 
     DG_frame_input, DG_frame_edit = was_edited(DG_frame_input, DG_frame_edit)
 
+    sum, DG_frame_input = calculate_shift(DG_frame_input, DG_frame_edit, '2017-07-08', DG)
+
+    #print(sum)
+    print(DG_frame_input)
+
+
     '''print(parser.get_input_data(inputFile))
     print("-----------------")
     print(parser.get_edit_data(editFile))'''

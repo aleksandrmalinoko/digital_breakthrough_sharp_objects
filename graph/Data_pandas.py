@@ -48,8 +48,8 @@ def calculate_shift(planned, fact, data, graph:nx.DiGraph):
                     if planned['normal_len'][i] > planned['min_len'][i]:
                         tmp = planned['normal_len'][i] - planned['min_len'][i]
                         if date_calculate(planned['start'][j], tmp) >= date_calculate(planned['start'][i], planned['normal_len'][i]):
-                            sum = (planned['normal_len'][i] - date_minus(planned['start'][j], planned['start'][i])) * planned['shift_before'][i]
-                            planned['normal_len'][i] = date_minus(planned['start'][j], planned['start'][i])
+                            sum = (planned['normal_len'][i] - date_minus(planned['start'][i], planned['start'][j])) * planned['shift_before'][i]
+                            planned['normal_len'][i] = date_minus(planned['start'][i], planned['start'][j])
                             planned['end'][i] = planned['start'][j]
                             planned['replan_cost'][i] += sum
                     pass

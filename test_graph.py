@@ -20,7 +20,7 @@ milestones_frame_edit = build_frame(milestones)
 
 DG_frame_input = was_edited(DG_frame_input, DG_frame_edit)
 
-sum, DG_frame_input = calculate_shift(DG_frame_input, DG_frame_edit, '2017-07-08', DG)
+
 
 print(DG_frame_input)
 
